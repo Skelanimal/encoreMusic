@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}

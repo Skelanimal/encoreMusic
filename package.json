@@ -1,0 +1,17 @@
+{
+  "name": "encoremusic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./SCSS/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

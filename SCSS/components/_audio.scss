@@ -1,0 +1,13 @@
+.audio-column {
+  max-width: $grid-width;
+  display: inline-block;
+
+  .audio-player {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}

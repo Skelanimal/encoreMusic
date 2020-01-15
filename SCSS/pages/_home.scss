@@ -1,0 +1,23 @@
+.section-about {
+  background-color: $background-light-yellow;
+  padding: 17rem 5rem;
+  margin-top: -10vh;
+}
+
+.section-music {
+  padding: 12rem 5rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 240, 158, 0.85),
+      rgba(60, 58, 47, 0.85)
+    ),
+    url(../img/violin-music-page.jpg);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-3.25deg);
+  margin-top: -10vh;
+
+  & > * {
+    transform: skewY(3.25deg);
+  }
+}

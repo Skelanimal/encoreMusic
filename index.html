@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/violin-icon.png" />
+
+    <title>Encore Music</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img src="img/violin-icon.png" alt="Logo" class="logo" />
+      </div>
+      <div class="header-text-container">
+        <h1 class="header-text">
+          <span class="title">
+            ENCORE MUSIC
+          </span>
+          <span class="description">
+            "It is no wonder why many fine restaurants, country clubs, hotels
+            and catering facilities recommend Encore Music."
+          </span>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            ABOUT ENCORE MUSIC
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-title u-margin-bottom-small">
+              Under the direction of Patricia Johnson,
+            </h3>
+            <p class="paragraph">
+              Encore Music is dedicated to the success of each event. She has
+              created the finest ensembles and performs at hundreds of parties
+              each year. Encore's prestigious bands perform at New York's most
+              exclusive celebrations.
+            </p>
+
+            <h3 class="heading-title u-margin-bottom-small">
+              We take pride in our versatility
+            </h3>
+            <p class="paragraph">
+              and our ability to provide the music of your dreams. As your music
+              director, Patricia Johnson personally meets with you and
+              customizes the music to your party. This personalized service,
+              intricate planning and attention to detail is what makes Encore so
+              special.
+            </p>
+          </div>
+          <div class="col-1-of-2">
+
+            <div class="slideshow-container">
+
+              <div class="slides slideshow">
+                <img src="./img/slideshow-example1.jpeg" style=
+                "height: 40rem; width: 100%;
+                 margin-top: -2rem;
+                 box-shadow: 0 1.5rem 4rem  rgba(0, 0, 0, .4);
+                 border-radius: 1.5rem"
+                 />
+              </div>
+
+              <div class="slides slideshow">
+                <img src="./img/slideshow-example2.jpeg" style=
+                "height: 40rem; width: 100%;
+                 margin-top: -2rem;
+                 box-shadow: 0 1.5rem 4rem  rgba(0, 0, 0, .4);
+                 border-radius: 1.5rem"
+                 />
+              </div>
+
+              <div class="slides slideshow">
+                <img src="./img/slideshow-example3.jpg" style=
+                "height: 40rem; width: 100%;
+                 margin-top: -2rem;
+                 box-shadow: 0 1.5rem 4rem  rgba(0, 0, 0, .4);
+                 border-radius: 1.5rem"
+                 />
+              </div>
+            <script src="./javascript/slideshow.js"></script>
+            <br />
+
+            <div class="u-center-text">
+              <span class="dot" onclick="currentSlide(1); function stopVideo(){player.stopVideo()}"></span>
+              <span class="dot" onclick="currentSlide(2); function stopVideo(){player.stopVideo()}"></span>
+              <span class="dot" onclick="currentSlide(3); function stopVideo(){player.stopVideo()}"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-music">
+         <div class="u-center-text u-margin-bottom-medium">
+             <h2 class="heading-secondary">SOME OF OUR WORK</h2>
+        </div>
+          <div class="row">
+            <div class="col-1-of-2 u-center-text">
+                <h3 class="column-title u-margin-bottom-small u-center-text">
+                    AUDIO
+                </h3>
+                <div class="audio-column">
+                    <h2 class="heading-title song-name">Octo Ball:</h2>
+                    <audio controls class="audio-player">
+                        <source src="octoRegret.mp3" type="audio/mp3" />
+                    </audio>
+                    <h2 class="heading-title song-name">Moon Dust:</h2>
+                    <audio controls class="audio-player">
+                        <source src="moonDust.mp3" type="audio/mp3" />
+                    </audio>
+                    <h2 class="heading-title song-name">Green Kingdom:</h2>
+                    <audio controls class="audio-player">
+                        <source src="greenKingdom.mp3" type="audio/mp3" />
+                    </audio>
+                </div>
+            </div>
+            <div class="col-1-of-2 u-center-text">
+                <h3 class="column-title u-margin-bottom-small u-center-text">
+                    VIDEO
+                </h3>
+                <div class="video-column">
+                    <div class="videos slideshow">
+                    <iframe class="video-player"
+                        src="https://www.youtube.com/embed/CNEuzhr7zQU?enablejsapi=1" allowfullscreen="allowfullscreen"
+                        style="height: 31.5rem;
+                        width: 100%;
+                        top: 0;
+                        left: 0;"
+                        >
+                    </iframe>
+                </div>
+                <div class="videos slideshow">
+                    <iframe class="video-player"
+                        src="https://www.youtube.com/embed/D-UmfqFjpl0?enablejsapi=1" allowfullscreen="allowfullscreen"
+                        style="height: 31.5rem;
+                        width: 100%;
+                        top: 0;
+                        left: 0;"
+                        >
+                        </iframe>
+                </div>
+                <div class="videos slideshow">
+                    <iframe class="video-player"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY?enablejsapi=1" allowfullscreen="allowfullscreen"
+                        style="height: 31.5rem;
+                        width: 100%;
+                        top: 0;
+                        left: 0;"
+                        >
+                    </iframe>
+                </div>
+                <script src="./javascript/video-slideshow.js"></script>
+                <br />
+                <div class="u-center-text">
+                    <span class="vid_dot" onclick="currentVideo(1)"></span>
+                    <span class="vid_dot" onclick="currentVideo(2)"></span>
+                    <span class="vid_dot" onclick="currentVideo(3)"></span>
+                </div>
+                </div>
+
+                </div>
+            </div>
+    </section>
+
+    </main>
+
+    <a href="#" class="btn blkGold contact-button">Contact us</a>
+
+    <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+        </section>
+        -->
+  </body>
+</html>
