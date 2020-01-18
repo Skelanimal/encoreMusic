@@ -6,6 +6,10 @@
     margin-bottom: $gutter-vertical;
   }
 
+  &.client-row {
+    max-width: 100rem;
+  }
+
   @include clearfix;
 
   [class^="col-"] {
