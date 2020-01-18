@@ -38,6 +38,7 @@
   }
 
   &.blkGold {
+    z-index: 1;
     background-color: $light-black;
     color: $button-font-yellow;
     &::after {
@@ -82,5 +83,22 @@
   &:active,
   &:hover {
     background-color: #a7a7a7;
+  }
+}
+
+.back-to-top {
+  &:link,
+  &:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    color: $button-font-yellow;
+    transform: scale(1.1);
   }
 }
