@@ -288,7 +288,7 @@ body {
     color: lightcoral; }
   .popup-content {
     width: 50%;
-    height: 75%;
+    height: 70%;
     background-color: #e7e6d1;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     position: absolute;
