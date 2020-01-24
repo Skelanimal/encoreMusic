@@ -1,6 +1,7 @@
 .footer {
   background-color: #2b2b2b;
-  padding: 1rem 0;
+  padding: 2rem 0 1rem;
+  margin-top: -1rem;
 
   .footer-logo-container {
     margin-bottom: 1rem;
@@ -8,6 +9,7 @@
 
   .footer-logo {
     height: 5.5rem;
+    opacity: 0.7;
   }
 
   .border {

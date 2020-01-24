@@ -15,6 +15,36 @@
     <title>Encore Music</title>
   </head>
   <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation-button">
+        <span class="navigation-icon">&nbsp;</span>
+      </label>
+      <div class="navigation-background">&nbsp;</div>
+      <nav class="navigation-nav">
+        <label for="navi-toggle">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#about" class="navigation-link">About Encore</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#music" class="navigation-link">Our Work</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#venues" class="navigation-link">Places We've Played</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#feedback" class="navigation-link">Client Feedback</a>
+          </li>
+        </ul>
+      </label>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="logo-container">
         <img src="img/violin-icon.png" alt="Logo" class="logo" />
@@ -33,6 +63,7 @@
     </header>
 
     <main>
+      <a name="about"></a>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -103,7 +134,7 @@
           </div>
         </div>
       </section>
-
+      <a name="music"></a>
       <section class="section-music">
          <div class="u-center-text u-margin-bottom-medium">
              <h2 class="heading-secondary">SOME OF OUR WORK</h2>
@@ -174,8 +205,9 @@
             </div>
           </div>
     </section>
+    <a name="venues"></a>
     <section class="section-venues">
-      <div class="u-center-text u-margin-bottom-big">
+      <div class="u-center-text u-margin-bottom-medium">
         <h2 class="heading-secondary">
           Frequent Venues
         </h2>
@@ -233,9 +265,9 @@
           </div>
         </div>
       </div>
-      <div class="u-center-text u-margin-bottom-big">
+      <div class="u-center-text u-margin-bottom-medium">
         <h2 class="heading-secondary">
-          & Some of Our Corporate Clients
+          & Some of Our Clients
         </h2>
         <div class="row">
           <div class="col-1-of-3 venue-container">
@@ -277,8 +309,9 @@
           </div>
         </div>
     </section>
+    <a name="feedback"></a>
     <section class="section-feedback">
-      <div class="u-margin-bottom-big u-center-text">
+      <div class="u-margin-bottom-big u-center-text" style="margin-top: 4rem">
         <h2 class="heading-secondary">
           WHAT OTHERS ARE SAYING
         </h2>
@@ -333,8 +366,76 @@
       </div>
     </footer>
 
-    <a href="#" class="btn blkGold contact-button">Contact us</a>
+    <a href="#contact" class="btn blkGold contact-button">Contact us</a>
 
+    <div class="popup" id="contact">
+      <div class="popup-content">
+
+    <!-- START HERE -->
+    <form
+      class="gform pure-form pure-form-stacked"
+      method="POST"
+      data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbxKHxGk60SoSX_4CCc8yEAxwdTsDCCxFdmJ4l_QwQ/exec"
+    >
+      <!-- change the form action to your script url -->
+      <div class="row">
+        <a href="#" class="popup-close">&times;</a>
+      <div class="form"><div class="u-center-text">
+        <h2 class="heading-secondary u-margin-bottom-small">Contact Us</h2>
+      </div>
+        <div class="form-group">
+          <input id="name" class="form-input" name="name" placeholder="Full Name"/>
+        </div>
+
+        <div class="form-group">
+          <input
+            id="email"
+            class="form-input"
+            name="email"
+            type="email"
+            value=""
+            required
+            placeholder="Email Address"
+          />
+          <span class="email-invalid" style="display:none">
+            Must be a valid email address</span>
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="message"
+            class="form-input message"
+            name="message"
+            rows="10"
+            required
+            placeholder="Your Message Here"
+          ></textarea>
+        </div>
+
+        <button class="btn blkGold email-button">
+          Send
+        </button>
+      </div>
+      <div class="thankyou_message u-center-text" style="display:none; padding:1rem;" >
+        <h2>
+          Thanks for contacting us! We will get back to you soon!
+        </h2>
+      </div>
+    </form>
+      </div>
+
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="email-handler.js"
+    ></script>
+      </div>
+    </div>
     <!--
         <section class="grid-test">
             <div class="row">

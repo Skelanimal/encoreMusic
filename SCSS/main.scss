@@ -7,15 +7,18 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/buttons";
-@import "components/slideshow";
 @import "components/audio";
-@import "components/video";
-@import "components/venue";
+@import "components/buttons";
+@import "components/email";
 @import "components/feedback";
+@import "components/popup";
+@import "components/slideshow";
+@import "components/venue";
+@import "components/video";
 
+@import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
-@import "layout/footer";
+@import "layout/navigation";
 
 @import "pages/home";

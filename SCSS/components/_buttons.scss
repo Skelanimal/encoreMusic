@@ -1,6 +1,7 @@
 /* testing */
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +10,9 @@
     display: inline-block;
     border-radius: 4rem;
     transition: all 0.1s;
+
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-0.2rem);
@@ -48,6 +52,11 @@
       position: fixed;
       bottom: 2rem;
       right: 2rem;
+      animation: button_fade_right 1.5s ease-out;
+      animation-fill-mode: backwards;
+    }
+    &.email-button {
+      position: fixed;
       animation: button_fade_right 1.5s ease-out;
       animation-fill-mode: backwards;
     }
